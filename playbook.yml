@@ -1,0 +1,27 @@
+- name: Install Apache 2 Web Server
+  hosts: servers
+  become: true
+
+  tasks:
+   - name: Install apache2
+     apt:
+       name: apache2
+       state: latest
+   - name: start apache2
+     service:
+      name: apache2
+      state: started
+   - name: enable apache2
+     enabled: yes
+
+   - name: Install Nginx
+    apt:
+      name: nginx
+      state: present
+
+   - name: Install MySQL client
+    apt:
+      name: mysql-client
+      state: present
+
+
