@@ -15,8 +15,11 @@ Default location of ansible-hostfile - etc/ansible/hosts
 
 I have grouped both IPs together and named the group as "Servers"
 
+<img width="954" alt="hostfile" src="https://github.com/NavreetK/Ansible-Examples/assets/46690891/76da6458-d0b9-448a-b446-9b314301f1b5">
+
 Once you have written your playbook.yml file you can execute it by using the following command:
 
 ```bash
 ansible-playbook playbookname.yml
 ```
+<img width="960" alt="ansible" src="https://github.com/NavreetK/Ansible-Examples/assets/46690891/e6b81502-6269-46bf-882a-820a74271ccb">
